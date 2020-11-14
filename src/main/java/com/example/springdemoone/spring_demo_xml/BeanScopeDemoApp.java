@@ -1,4 +1,4 @@
-package com.example.springdemoone.springdemo;
+package com.example.springdemoone.spring_demo_xml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -6,7 +6,7 @@ public class BeanScopeDemoApp {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("springdemo/beanScope-applicationContext.xml");
+                new ClassPathXmlApplicationContext("spring_demo_xml/beanScope-applicationContext.xml");
 
         Coach theCoach = context.getBean("myCoach", Coach.class);
 

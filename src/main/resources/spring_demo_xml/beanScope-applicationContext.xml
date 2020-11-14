@@ -9,13 +9,12 @@
 
     <!-- define the dependency -->
     <bean id="myFortuneService"
-          class="com.example.springdemoone.springdemo.HappyFortuneService">
+          class="com.example.springdemoone.spring_demo_xml.HappyFortuneService">
     </bean>
 
     <bean id="myCoach"
-          class="com.example.springdemoone.springdemo.TrackCoach"
-          init-method="doMyStartupStuff"
-          destroy-method="doMyCleanupStuff">
+          class="com.example.springdemoone.spring_demo_xml.TrackCoach"
+          scope="prototype">
         <!-- set up constructor injection -->
 
         <constructor-arg ref="myFortuneService" />

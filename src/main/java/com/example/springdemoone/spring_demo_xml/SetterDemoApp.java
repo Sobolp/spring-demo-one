@@ -1,4 +1,4 @@
-package com.example.springdemoone.springdemo;
+package com.example.springdemoone.spring_demo_xml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -7,7 +7,7 @@ public class SetterDemoApp {
 
         //load the spring configuration file
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("springdemo/applicationContext.xml");
+                new ClassPathXmlApplicationContext("spring_demo_xml/applicationContext.xml");
 
         //retrieve bean from spring container
         CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);

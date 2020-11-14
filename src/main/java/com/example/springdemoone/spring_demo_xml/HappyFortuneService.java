@@ -1,4 +1,4 @@
-package com.example.springdemoone.springdemo;
+package com.example.springdemoone.spring_demo_xml;
 
 public class HappyFortuneService implements FortuneService {
     @Override
